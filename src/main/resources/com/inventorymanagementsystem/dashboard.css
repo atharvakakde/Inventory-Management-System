@@ -1,0 +1,176 @@
+.navbar{
+    -fx-background-color:linear-gradient(to bottom right , #F8BBD0, #D1C4E9); /* baby pink -> baby purple */
+    -fx-font-family: "Poppins", "Arial";
+}
+
+.content{
+    -fx-background-color: linear-gradient(to bottom right, #FCE7F3, #E9D5FF); /* baby pink -> baby purple */
+    -fx-font-family: "Poppins", "Arial";
+}
+
+.close,.add,.save,.clear,.delete,.refresh,.print{
+    -fx-background-color:linear-gradient(to bottom right , #F48FB1, #CE93D8);
+    -fx-background-radius:10px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+}
+.close:hover,.add:hover,.save:hover,.clear:hover,.delete:hover,.refresh:hover,.print:hover{
+    -fx-background-color:linear-gradient(to bottom right , #F06292, #BA68C8);
+}
+
+.navbutton{
+    -fx-background-color: rgba(248,187,208,0.18);
+    -fx-cursor:hand;
+    -fx-alignment:CENTER-LEFT;
+    -fx-text-fill:#ffffff;
+}
+
+.navbutton:hover{
+    -fx-background-color: rgba(209,196,233,0.38);
+}
+
+.dasboard_box{
+    -fx-background-color: linear-gradient(to bottom right , #F8BBD0, #D1C4E9);
+    -fx-background-radius:18px;
+    -fx-padding:18px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0.2, 0, 2);
+}
+
+
+/* Billing Pane */
+.table-view{
+-fx-background-color: transparent;
+-fx-border-color: rgba(206,147,216,0.35);
+-fx-border-radius:12px;
+-fx-padding:0px;
+}
+
+.table-view .table-column{
+-fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+-fx-background-color: #c087ec; /* updated deep purple header */
+-fx-background-insets:0 0 0 0;
+-fx-background-radius: 12px 12px 0px 0px;
+}
+
+.table-view .column-header,.filter{
+-fx-background-color:transparent;
+-fx-size:40;
+}
+
+.table-view .column-header .label{
+ -fx-text-fill:#e5e7eb;
+ -fx-font-family:"Arial";
+ -fx-font-weight:bold;
+}
+
+.table-row-cell{
+ -fx-background-color: rgba(255,255,255,0.02);
+}
+.table-row-cell:odd{
+ -fx-background-color: rgba(255,255,255,0.05);
+}
+.table-row-cell:selected{
+ -fx-background-color: #4C2A68; /* purple selection */
+}
+.table-view .cell{
+ -fx-text-fill:#AE67E5; /* global table text color */
+ -fx-font-weight: 600;
+}
+
+.textfield{
+-fx-background-color:linear-gradient(to bottom,#efefef,#eee);
+-fx-border-color:linear-gradient(to bottom right, #2f466b, #662d60);
+-fx-border-width:.8px;
+-fx-font-family:"Tahoma";
+-fx-border-radius:4px;
+}
+
+.textfield:focused{
+-fx-border-width:1.8px;
+-fx-background-color:#fff;
+}
+
+.search-billing{
+-fx-background-color: #c087ec; /* updated dark purple field */
+-fx-text-fill: #1f1b2e;
+-fx-prompt-text-fill: #6d5fa8;
+-fx-border-color: rgba(206,147,216,0.55);
+-fx-border-radius:8px;
+-fx-font-size:14px;
+-fx-font-family:"Poppins";
+-fx-border-width:1px;
+-fx-padding: 0px 0px 0px 28px;
+}
+
+.search-billing:focused{
+-fx-border-width:2px;
+}
+
+#dash_total_stocks, #dash_total_sold, #dash_total_purchase{
+ -fx-font-size: 42px;
+ -fx-font-weight: bold;
+}
+
+/* High-contrast lists (Preset 1) for non-dashboard panes */
+/* Set list backgrounds (tables and columns) to #AE67E5 */
+.list-pane .table-view{
+ -fx-background-color:#AE67E5;
+ -fx-control-inner-background:#AE67E5;
+ -fx-control-inner-background-alt:#AE67E5;
+ -fx-background-insets:0;
+ -fx-background-radius:12px;
+}
+.list-pane .table-view .virtual-flow,
+.list-pane .table-view .virtual-flow .clipped-container,
+.list-pane .table-view .virtual-flow .sheet,
+.list-pane .table-view .placeholder{
+ -fx-background-color:#AE67E5;
+ -fx-background-insets:0;
+}
+.list-pane .table-view .virtual-flow .corner{
+ -fx-background-color:#AE67E5;
+}
+/* Header: bold text, background #AE67E5 */
+.list-pane .table-view .column-header-background{
+ -fx-background-color: #AE67E5;
+ -fx-background-insets:0 0 0 0;
+ -fx-background-radius: 12px 12px 0px 0px;
+}
+.list-pane .table-view .column-header .label{
+ -fx-text-fill:#ffffff; /* white for contrast on #AE67E5 */
+ -fx-font-weight:bold;
+}
+
+/* Rows: deeper purple text, static background #AE67E5, hover highlight soft lilac */
+.list-pane .table-row-cell{
+ -fx-background-color:#AE67E5;
+}
+.list-pane .table-row-cell:odd{
+ -fx-background-color:#AE67E5;
+}
+.list-pane .table-view .cell {
+ -fx-text-fill: #AE67E5; /* requested purple across all cells */
+ -fx-background-color: transparent;
+ -fx-font-weight: 600;
+}
+.list-pane .table-row-cell:hover{
+ -fx-background-color:#F3E8FF; /* soft lilac hover */
+}
+.list-pane .table-view:focused .table-row-cell:selected,
+.list-pane .table-row-cell:selected{
+ -fx-background-color: #6A1B9A; /* darker purple for selected row bg */
+}
+.list-pane .table-view:focused .table-row-cell:selected .cell,
+.list-pane .table-row-cell:selected .cell {
+ -fx-text-fill: #ffffff; /* keep selected text readable */
+}
+
+/* Ensure selection text is readable for non list-pane tables, too */
+.table-view:focused .table-row-cell:selected .cell,
+.table-row-cell:selected .cell {
+ -fx-text-fill: #ffffff;
+}
+
+

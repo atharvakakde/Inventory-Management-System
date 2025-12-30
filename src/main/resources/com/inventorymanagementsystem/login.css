@@ -1,0 +1,51 @@
+/* Optional: embed Poppins if added under resources/fonts */
+/* @font-face support in JavaFX CSS */
+/*
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url("fonts/Poppins-SemiBold.ttf");
+}
+*/
+
+.app { /* attach this to root in FXML */
+    -fx-font-family: "Poppins", "Arial";
+}
+
+.login-bg{
+    -fx-background-color:linear-gradient(to bottom right , #F8BBD0, #D1C4E9); /* baby pink -> baby purple */
+}
+
+.textfield-design{
+    -fx-background-color:rgba(255,255,255,0.65);
+    -fx-background-radius:10px;
+    -fx-border-radius:10px;
+    -fx-border-color: linear-gradient(to bottom right , #F48FB1, #CE93D8);
+    -fx-border-width:1px;
+    -fx-text-inner-color:#212121;
+}
+
+.textfield-design:focused{
+    -fx-border-width:2px;
+    -fx-background-color:#ffffff;
+}
+
+.login-button{
+    -fx-background-color:linear-gradient(to bottom right , #F48FB1, #CE93D8);
+    -fx-background-radius:24px;
+    -fx-cursor:hand;
+    -fx-text-fill:#ffffff;
+    -fx-font-weight:bold;
+}
+.login-button:hover{
+    -fx-background-color:linear-gradient(to bottom right , #F06292, #BA68C8);
+}
+
+.close{
+    -fx-background-color:linear-gradient(to bottom right , #F48FB1, #CE93D8);
+    -fx-background-radius:6px;
+    -fx-cursor:hand;
+}
